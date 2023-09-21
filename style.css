@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: 'Alata', sans-serif;
+    background-color: #CAE5E5;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 512px;
+    width: 292px;
+    background: #576574;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.container>.resultado {
+    height: 150px;
+    width: 100%;
+    background-color: #384351;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.teclado-full {
+    height: 362px;
+}
+
+.teclado {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.botao1,
+.botao2,
+.botao3,
+.botao4 {
+    height: 100%;
+    width: 100%;
+    background-color: #3B4655;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Alata', sans-serif;
+    border: none;
+    font-size: large;
+}
+
+.botao1:hover,
+.botao2:hover,
+.botao3:hover,
+.botao4:hover,
+#botao4teclado5:hover {
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+}
+
+#botao1teclado5 {
+    border-bottom-left-radius: 6px;
+}
+
+#botao4teclado5 {
+    background-color: #3B4655;
+
+    border-bottom-right-radius: 6px;
+}
+
+.result {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    justify-content: end;
+    font-size: 400%;
+    color: white;
+    align-items: center;
+}
+
+.operation {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    justify-content: end;
+    align-items: end;
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.422);
+}
+
+.result>p,
+.operation>p {
+    padding-right: 10px;
+}
+
+.operation>p {
+    font-size: 130%;
+}
+
+.result>p {
+    font-size: 60%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #384351; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto do footer */
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: aqua; /* Cor do link */
+    text-decoration: none; /* Remover sublinhado do link */
+}

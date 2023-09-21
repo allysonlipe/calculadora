@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="IMG/discordperfil.png"
+      type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="resultado">
+        <div class="result">
+          <p id="op">testando</p>
+        </div>
+        <div class="operation">
+          <p id="resultado">Resultado</p>
+        </div>
+      </div>
+      <!-- resultadol -->
+      <section class="teclado-full">
+        <div class="teclado">
+          <button class="math botao1" onclick="calculadora.ac()">AC</button>
+          <button class="botao botao2">+/-</button>
+          <button class="botao botao3">%</button>
+          <button class="botao botao4" onclick="calculadora.divisao()">
+            /
+          </button>
+        </div>
+        <div class="teclado">
+          <button class="botao botao1" onclick="calculadora.proximoNumero(7)">
+            7
+          </button>
+          <button class="botao botao2" onclick="calculadora.proximoNumero(8)">
+            8
+          </button>
+          <button class="botao botao3" onclick="calculadora.proximoNumero(9)">
+            9
+          </button>
+          <button class="botao botao4" onclick="calculadora.multiplicacao()">
+            x
+          </button>
+        </div>
+        <div class="teclado">
+          <button class="botao botao1" onclick="calculadora.proximoNumero(4)">
+            4
+          </button>
+          <button class="botao botao2" onclick="calculadora.proximoNumero(5)">
+            5
+          </button>
+          <button class="botao botao3" onclick="calculadora.proximoNumero(6)">
+            6
+          </button>
+          <button class="botao botao4" onclick="calculadora.subtracao()">
+            -
+          </button>
+        </div>
+        <div class="teclado">
+          <button class="botao botao1" onclick="calculadora.proximoNumero(1)">
+            1
+          </button>
+          <button class="botao botao2" onclick="calculadora.proximoNumero(2)">
+            2
+          </button>
+          <button class="botao botao3" onclick="calculadora.proximoNumero(3)">
+            3
+          </button>
+          <button class="botao botao4" onclick="calculadora.adicao()">+</button>
+        </div>
+        <div class="teclado">
+          <button
+            class="botao botao1"
+            id="botao1teclado5"
+            onclick="calculadora.proximoNumero(0)">
+            0
+          </button>
+          <button class="botao botao3" onclick="calculadora.del()">del</button>
+          <button class="botao botao2" onclick="calculadora.proximoNumero('.')">
+            ,
+          </button>
+          <button
+            class="botaoRES botao4"
+            id="botao4teclado5"
+            onclick="calculadora.igual()">
+            =
+          </button>
+        </div>
+      </section>
+      <!-- teclado-full -->
+    </div>
+    <!-- container -->
+    <footer>
+      <p>
+        © Calculadora 2023 <br> Todos os direitos reservados. Desenvolvido por
+        <a href="https://www.instagram.com/allysonlipe/">@allysonlipe</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      calculadora.inicializacao();
+    </script>
+  </body>
+</html>
